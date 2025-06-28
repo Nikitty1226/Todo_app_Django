@@ -1,0 +1,15 @@
+# AWS SAM
+samconfig.toml
+.aws-sam
+
+# virtual environment
+todoapp_env/
+
+# environment variables
+.env
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# DB files
+db.sqlite3
