@@ -1,7 +1,3 @@
-# AWS SAM
-samconfig.toml
-.aws-sam
-
 # virtual environment
 todoapp_env/
 
