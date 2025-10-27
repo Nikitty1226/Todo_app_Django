@@ -14,8 +14,8 @@
 <div class="SearchWrapper">
     <form method="GET">
         {% csrf_token %}
-        <input type="text" name="search">
-        <input type="submit" value = "検索">
+        <input type="text" name="search" value="{{search}}">
+        <input type="submit" value="検索">
     </form>
 
     <a href="{% url 'create-task' %}" class="AddButton">＋</a>
