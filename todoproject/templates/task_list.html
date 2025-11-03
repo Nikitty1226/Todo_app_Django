@@ -14,8 +14,8 @@
 <div class="SearchWrapper">
     <form method="GET">
         {% csrf_token %}
-        <input type="text" name="search">
-        <input type="submit" value = "検索">
+        <input type="text" name="search" value="{{search}}">
+        <input type="submit" value="検索">
     </form>
 
     <a href="{% url 'create-task' %}" class="AddButton">＋</a>
@@ -54,7 +54,7 @@
 <div class="LoginAndLogout">
     <form action="{% url 'logout' %}" method="POST">
         {% csrf_token %}
-        <button type="submit">ログアウト</button>
+        <input type="submit" value="ログアウト">
     </form>
     <a href="{% url 'account-delete' %}" class="delete">アカウント削除</a>
 </div>
